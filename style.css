@@ -1,0 +1,86 @@
+body{
+    background-color: blue;
+}
+
+#outer_most_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+
+    /* flex-direction: column; */
+}
+
+#outer_container{
+    background-color:olivedrab;
+    max-width: 60%;
+    padding: 10vw;
+    height: 75vh;
+}
+
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 3%;
+}
+
+h1:hover{
+    background-color: antiquewhite;
+    font-weight: bolder;
+}
+
+#inner_board{
+    background-color: thistle;
+    display: grid;
+
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.box{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    padding: 0;
+    font-size:100px;
+
+}
+
+.box:hover{
+    background-color: powderblue;
+}
+
+#restart{
+    width: 50%;
+    background-color:tomato;
+    color:black;
+    margin-left: 7vw;
+    cursor: pointer;
+    padding: 3%;
+}
+
+#restart:hover{
+    background-color:darkorange;
+}
+
+.winner{
+    background-color: magenta;
+    color: black;
+}
+
+#win{
+    background-color: aliceblue;
+    color: black;
+    height: 4vh;
+    width: 60%;
+    margin-left: 5.5vw;
+    text-align: center;
+    font-size: x-large;
+    padding: 0.1rem;
+    font-weight: bolder;
+}
