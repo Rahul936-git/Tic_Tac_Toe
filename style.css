@@ -95,4 +95,9 @@ h1:hover{
         grid-template-columns: repeat(3, 60px);
         grid-template-rows: repeat(3, 60px);
     }
+
+    .box{
+        font-size:40px;
+    }
+
 }
