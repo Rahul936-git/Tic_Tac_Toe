@@ -8,7 +8,6 @@ body{
     align-items: center;
     height: 87vh;
 
-    /* flex-direction: column; */
 }
 
 #outer_container{
@@ -45,7 +44,6 @@ h1:hover{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /* transition: all 0.3s ease; */
     padding: 0;
     font-size:100px;
 
@@ -83,4 +81,18 @@ h1:hover{
     font-size: x-large;
     padding: 0.1rem;
     font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+    #outer_container {
+
+        width: 100%;
+    }
+
+    #inner_board {
+
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+    }
 }
